@@ -1,0 +1,30 @@
+.animation {
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    transition: background-color .5s linear;
+    animation: moves 3s linear forwards;
+}
+
+@keyframes moves {
+    0% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(100px, 0);
+    }
+    66% {
+        transform: translate(100px,100%);
+    }
+    99% {
+        transform: translate(100px,100%) rotate(145deg) scale(2);
+
+    }
+    100% {
+        transform: translate(100px,100%) rotate(145deg) scale(2);
+    }
+}
+
+.animation:hover {
+    background-color: #ff0;
+}
